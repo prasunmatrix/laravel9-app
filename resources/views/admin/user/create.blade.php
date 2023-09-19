@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword">Confirm Password</label>
-                  <input type="password" name="password_confirmation" id="password_confirmation" value="{{old('password_confirmation')}}" required class="form-control" placeholder="Confirm Password">
+                  <input type="password" name="confirm_password" id="confirm_password" value="{{old('confirm_password')}}" required class="form-control" placeholder="Confirm Password">
                 </div>
                 <!-- <div class="form-group">
                   <label for="exampleInputFile">File input</label>

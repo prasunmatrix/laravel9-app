@@ -24,7 +24,7 @@ class UserController extends Controller
 
     $this->data['page_title'] = 'Admin | Subadmin';
     //$this->data['admin'] = User::where('id', '!=', $loginUser->id)->orderBy('id', 'desc')->paginate(10);
-    return view('admin.subadmin.index', $this->data);
+    return view('admin.user.index', $this->data);
   }
   public function userListTable(Request $request)
   {
@@ -74,7 +74,7 @@ class UserController extends Controller
     $this->validate($request, [
       'name' => 'required',
       'email' => 'required|email|unique:users,email',
-      'password' => 'required|confirmed',
+      'password' => 'required',
     ]);
 
     $input = $request->all();
