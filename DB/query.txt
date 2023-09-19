@@ -1,0 +1,4 @@
+DATE: 14/09/2023
+1. ALTER TABLE `users` ADD `status` ENUM('A','I') NOT NULL COMMENT 'A-Active,I-Inactive' AFTER `password`;
+DATE: 15/09/2023
+1. ALTER TABLE `password_resets` CHANGE `created_at` `created_at` TIMESTAMP on update CURRENT_TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP;

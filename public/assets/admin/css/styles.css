@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - SB Admin v7.0.5 (https://startbootstrap.com/template/sb-admin)
+* Copyright 2013-2022 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+ /* for validate js date:29/05/2023  */
+label.error{color: #ff0000;font-weight: normal;font-size: 12px;margin-bottom: 0;}
+/* for validate js date:29/05/2023  */
