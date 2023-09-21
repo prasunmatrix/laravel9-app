@@ -226,8 +226,8 @@
             </li>
           </ul>
         </li> -->
-        <li class="nav-item @if(Route::currentRouteName()=='admin.add-user') {{'menu-open'}} @endif">
-          <a href="#" class="nav-link @if(Route::currentRouteName()=='admin.add-user') {{'active'}} @endif">
+        <li class="nav-item @if(Route::currentRouteName()=='admin.add-user' || Route::currentRouteName()=='admin.user') {{'menu-open'}} @endif">
+          <a href="#" class="nav-link @if(Route::currentRouteName()=='admin.add-user' || Route::currentRouteName()=='admin.add-user') {{'active'}} @endif">
             <i class="nav-icon fas fa-edit"></i>
             <p>
               User
@@ -242,7 +242,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="pages/forms/advanced.html" class="nav-link">
+              <a href="{{ route('admin.user')}}" class="nav-link @if(Route::currentRouteName()=='admin.user') {{'active'}} @endif">
                 <i class="far fa-circle nav-icon"></i>
                 <p>User List</p>
               </a>

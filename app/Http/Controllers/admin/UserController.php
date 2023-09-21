@@ -22,7 +22,7 @@ class UserController extends Controller
   {
     $loginUser = Auth::guard('admin')->user();
 
-    $this->data['page_title'] = 'Admin | Subadmin';
+    $this->data['panel_title'] = 'User';
     //$this->data['admin'] = User::where('id', '!=', $loginUser->id)->orderBy('id', 'desc')->paginate(10);
     return view('admin.user.index', $this->data);
   }

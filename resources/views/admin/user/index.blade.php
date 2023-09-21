@@ -1,5 +1,5 @@
 @extends('admin.layouts.after-login-layout')
-@section('title', 'Admin| Add User')
+@section('title', 'Admin| User')
 @section('content')
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -7,12 +7,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>DataTables</h1>
+          <h1>{{$panel_title}}</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">DataTables</li>
+            <li class="breadcrumb-item active">{{$panel_title}}</li>
           </ol>
         </div>
       </div>
@@ -27,7 +27,7 @@
           <!-- /.card -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">DataTable with default features</h3>
+              <h3 class="card-title">{{$panel_title}}</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -51,7 +51,7 @@
                     <td> 4</td>
                     <td>X</td>
                   </tr>
-                  <tr>
+                  <!-- <tr>
                     <td>Trident</td>
                     <td>Internet
                       Explorer 5.0
@@ -448,7 +448,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>U</td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
